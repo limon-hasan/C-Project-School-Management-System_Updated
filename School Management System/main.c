@@ -1298,7 +1298,8 @@ int teacherLogin()
         password[i] = '\0'; // null-terminate the password string
 
         if ((strcmp(username, "teacher1") == 0 && strcmp(password, "teacher123") == 0) ||
-                (strcmp(username, "teacher2") == 0 && strcmp(password, "teacher456") == 0))
+                (strcmp(username, "teacher2") == 0 && strcmp(password, "teacher456") == 0) || 
+                (strcmp(username, "teacher3") == 0 && strcmp(password, "teacher789") == 0))
         {
             system("cls");
             return 1; // successful login done
