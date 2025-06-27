@@ -1297,11 +1297,10 @@ int teacherLogin()
         }
         password[i] = '\0'; // null-terminate the password string
 
-        if ((strcmp(username, "teacher1") == 0 && strcmp(password, "teacher123") == 0) ||
-                (strcmp(username, "teacher2") == 0 && strcmp(password, "teacher456") == 0) || 
-                (strcmp(username, "teacher3") == 0 && strcmp(password, "teacher789") == 0))
+        if (strcmp(username, "teacher") == 0 && strcmp(password, "teacher123") == 0)
         {
             system("cls");
+            printf("\nLogin successful!\n");
             return 1; // successful login done
         }
         else
@@ -1352,11 +1351,10 @@ int studentLogin()
         }
         password[i] = '\0'; // null-terminate the password string
 
-        if ((strcmp(username, "student1") == 0 && strcmp(password, "student123") == 0) ||
-                (strcmp(username, "student2") == 0 && strcmp(password, "student456") == 0) ||
-                (strcmp(username, "student3") == 0 && strcmp(password, "student789") == 0))
+        if (strcmp(username, "student") == 0 && strcmp(password, "student123") == 0)
         {
             system("cls");
+            printf("\nLogin successful!\n");
             return 1;
         }
         else
